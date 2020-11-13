@@ -2622,6 +2622,9 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			object-fit: cover;
+			height: 40%;
+			box-shadow: 3px 3px 5px #ccc;
 		}
 
 			.image.fit:first-child {
@@ -2632,6 +2635,51 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.user__img{
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				margin-left: 52px;
+				
+			}
+			.user__main{
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				margin: 0px;
+
+				width: 100%;
+			}
+
+			.signature__flex{
+				display: flex;
+				position: relative;
+			}
+
+			.user__img--sig{
+				width: 30%;
+				display: inline-block;
+				transform: scale(1.5);
+				margin-right: 700px;
+				filter: brightness(0) invert(1);
+				
+			}
+
+			.weatherwidget-io{
+				/* filter: brightness(0) invert(1); */
+				position: relative;
+				opacity: 0.5;
+				display: inline-block;
+				width: 50%;
+				margin-top: 20px;
+				margin-right: 50px;
+				/* float: right; */
+				
+
+				
+			
+			}
+				
 		.image.main {
 			display: block;
 			margin: 4rem 0;
@@ -2660,9 +2708,22 @@ input, select, textarea {
 
 	a.image {
 		overflow: hidden;
+		-moz-transition: -moz-transform 0.2s ease-out;
+			-webkit-transition: -webkit-transform 0.2s ease-out;
+			-ms-transition: -ms-transform 0.2s ease-out;
+			transition: transform 0.2s ease-out;
 	}
 
-		a.image img {
+	a.image:hover{
+		-moz-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+		transition: all 0.5s;
+		transform: scale(1.05);
+		box-shadow: 6px 7px 8px #cccc;
+	}
+
+		/* a.image img {
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
@@ -2674,7 +2735,7 @@ input, select, textarea {
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
-		}
+	 } */
 
 /* Actions */
 
