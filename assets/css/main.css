@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1056,7 +1052,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
+			.weatherwidget-io{
+				margin-right: 100px!important;
+				height: 30px!important;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2165,6 +2164,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+		
 			input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
@@ -2237,6 +2237,7 @@ input, select, textarea {
 				background-color: #18bfef;
 			}
 
+
 /* Form */
 
 	form {
@@ -2308,7 +2309,9 @@ input, select, textarea {
 					form > .fields > .field.quarter {
 						width: calc(100% - 1.5rem);
 					}
+					
 
+					
 		}
 
 	label {
@@ -2322,8 +2325,31 @@ input, select, textarea {
 		margin: 0 0 0.75rem 0;
 	}
 
+	/* .user__img{
+		width: 2rem;
+	} */
+	.user__main{
+		height: 50px;
+		border: none;
+	}
+	.signature__flex{
+		margin-top: 30px;
+		width: 40%;
+		height: 5rem;
+		border: none;
+	}
+
+
+
+	/* .user__img--sig{
+		width: 2rem;
+	} */
+
 		@media screen and (max-width: 980px) {
 
+			.signature__flex{
+				margin-top: 0px;
+			}
 			label {
 				font-size: 0.9rem;
 			}
@@ -2654,13 +2680,14 @@ input, select, textarea {
 			.signature__flex{
 				display: flex;
 				position: relative;
+				width: 100%;
 			}
 
 			.user__img--sig{
 				width: 30%;
 				display: inline-block;
 				transform: scale(1.5);
-				margin-right: 700px;
+				margin-right: 7rem;
 				filter: brightness(0) invert(1);
 				
 			}
@@ -2809,6 +2836,7 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 480px) {
+
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3242,7 +3270,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			.weatherwidget-io{
+				visibility: hidden;
+			}
 			.pagination .page, .pagination .extra {
 				display: none;
 			}
