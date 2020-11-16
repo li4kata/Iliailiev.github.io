@@ -1053,8 +1053,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 			.weatherwidget-io{
-				margin-right: 100px!important;
-				height: 30px!important;
+				width: 20%;
+				
 			}
 			.row {
 				display: flex;
@@ -2678,17 +2678,30 @@ input, select, textarea {
 			}
 
 			.signature__flex{
+				margin-left: 30px;
+				margin-top: 40px;
 				display: flex;
-				position: relative;
-				width: 100%;
+				justify-items: center;
+				align-items: center;
+				width: 44px;
+			}
+			.user__profile--picture{
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+				image-rendering: auto;
+ 				 image-rendering: crisp-edges;
+  				image-rendering: pixelated;
+				
 			}
 
 			.user__img--sig{
-				width: 30%;
+				width: auto;
+				height: 130%;
 				display: inline-block;
 				transform: scale(1.5);
 				margin-right: 7rem;
-				filter: brightness(0) invert(1);
+				/* filter: brightness(0) invert(1); */
 				
 			}
 
@@ -2697,8 +2710,8 @@ input, select, textarea {
 				position: relative;
 				opacity: 0.5;
 				display: inline-block;
-				width: 50%;
-				margin-top: 20px;
+				width: 30%;
+				margin-top: 35px;
 				margin-right: 50px;
 				/* float: right; */
 				
